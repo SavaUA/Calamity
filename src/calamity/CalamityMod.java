@@ -18,9 +18,11 @@ public class CalamityMod extends Mod{
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
             Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("This mod is currently under development");
-                dialog.cont.add("Expect from small  unharmful bugs to game breakinng glithces").row();
-                dialog.cont.button("Continue", dialog::hide).size(100f, 50f);
+                BaseDialog dialog = new BaseDialog("WARNING!!!");
+                dialog.cont.image(Core.atlas.find("calamity-sancho)).pad(15f).row();
+                dialog.cont.add("This mod is currently under development").row();
+                dialog.cont.add("[red]Expect from small unharmful bugs to some game breakinng glithces").row();
+                dialog.cont.button("Continue", dialog::hide).size(125f, 50f);
                 dialog.show();
             });
         });
