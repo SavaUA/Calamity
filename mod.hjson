@@ -8,7 +8,7 @@ name: "calamity"
 author: "SavaUA"
 
 #the fully qualified main class of the mod
-main: "calamity.CalamityMain"
+main: "calamity.CalamityMod"
 
 #the mod description as seen in the mod dialog
 description: "First mod ^^"
